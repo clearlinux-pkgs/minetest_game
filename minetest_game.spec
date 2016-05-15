@@ -1,8 +1,8 @@
 Name     : minetest_game
-Version  : 0.4.13
-Release  : 3
-URL      : https://github.com/minetest/minetest_game/archive/0.4.13.tar.gz
-Source0  : https://github.com/minetest/minetest_game/archive/0.4.13.tar.gz
+Version  : 0.4.14
+Release  : 4
+URL      : https://github.com/minetest/minetest_game/archive/0.4.14.tar.gz
+Source0  : https://github.com/minetest/minetest_game/archive/0.4.14.tar.gz
 Summary  : A Voxel Game
 BuildArch: noarch
 
@@ -13,7 +13,7 @@ License  : CC-BY-SA-2.0 LGPL-2.1
 The main game for the Minetest game engine [minetest_game]
 
 %prep
-%setup -q -n minetest_game-0.4.13
+%setup -q -n minetest_game-0.4.14
 
 %build
 
