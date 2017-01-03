@@ -1,6 +1,6 @@
 Name     : minetest_game
-Version  : 0.4.14
-Release  : 5
+Version  : 0.4.15
+Release  : 6
 URL      : https://github.com/minetest/minetest_game/archive/0.4.14.tar.gz
 Source0  : https://github.com/minetest/minetest_game/archive/0.4.14.tar.gz
 Summary  : A Voxel Game
@@ -19,7 +19,7 @@ The main game for the Minetest game engine [minetest_game]
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/minetest/games/minetest_game
-cp -arv game.conf menu mods %{buildroot}/usr/share/minetest/games/minetest_game/
+cp -arv *.txt game.conf menu mods %{buildroot}/usr/share/minetest/games/minetest_game/
 
 %files
 %defattr(-,root,root,-)
