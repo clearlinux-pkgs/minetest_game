@@ -1,6 +1,6 @@
 Name     : minetest_game
 Version  : 0.4.15
-Release  : 7
+Release  : 8
 URL      : https://github.com/minetest/minetest_game/archive/0.4.15.tar.gz
 Source0  : https://github.com/minetest/minetest_game/archive/0.4.15.tar.gz
 Summary  : A Voxel Game
@@ -12,7 +12,7 @@ License  : CC-BY-SA-2.0 LGPL-2.1
 The main game for the Minetest game engine [minetest_game]
 
 %prep
-%setup -q -n minetest_game-0.4.14
+%setup -q -n minetest_game-0.4.15
 
 %build
 
