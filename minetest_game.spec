@@ -1,6 +1,6 @@
 Name     : minetest_game
 Version  : 0.4.16
-Release  : 9
+Release  : 10
 URL      : https://github.com/minetest/minetest_game/archive/0.4.16.tar.gz
 Source0  : https://github.com/minetest/minetest_game/archive/0.4.16.tar.gz
 Summary  : A Voxel Game
