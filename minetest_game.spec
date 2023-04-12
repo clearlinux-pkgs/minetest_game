@@ -1,6 +1,6 @@
 Name     : minetest_game
 Version  : 5.7.0
-Release  : 20
+Release  : 21
 URL      : https://github.com/minetest/minetest_game/archive/5.7.0/minetest_game-5.7.0.tar.gz
 Source0  : https://github.com/minetest/minetest_game/archive/5.7.0/minetest_game-5.7.0.tar.gz
 Summary  : A Voxel Game
