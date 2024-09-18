@@ -18,7 +18,7 @@ git pull --ff-only
 make update-versions
 
 URL=$(grep '^URL' Makefile  | awk '{ print $3 }')
-VERSION=$(perl -pe "s|^.*/${PKG}-([\d\.]+)\.[^/]+\$|\$1|" <<< ${URL})
+VERSION=$(perl -pe "s#^.*/${PKG}-([\d\.]+|[0-9a-f]{6,})\.[^/]+\$#\$1#" <<< ${URL})
 CURRENT_URL=$(perl -pe 's/^(\s*URL\s*:\s*)\S+/\$1/' ${PKG}.spec)
 CURRENT_VERSION="$(rpmspec --srpm -q --qf="%{VERSION}" $PKG.spec)"
 
