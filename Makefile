@@ -1,5 +1,5 @@
 PKG_NAME := minetest_game
-URL = https://github.com/minetest/minetest_game/archive/b23c44d9803d9e368254df688c886b17874b11ea/minetest_game-b23c44d9803d9e368254df688c886b17874b11ea.tar.gz
+URL = https://github.com/minetest/minetest_game/archive/093cd28a279f42592a53762e2a8452f29b2a31ba/minetest_game-093cd28a279f42592a53762e2a8452f29b2a31ba.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
