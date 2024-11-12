@@ -42,7 +42,7 @@ perl -pi -e "s|${CURRENT_URL}|${URL}|g" ${PKG}.spec
 perl -pi -e "s|${CURRENT_VERSION}|${VERSION}|g" ${PKG}.spec
 
 # Check whether anything actually changed
-git diff --no-patch --exit-code ${PKG}.spec && errexit "No change to Makefile or specfile"
+git diff --no-patch --exit-code Makefile ${PKG}.spec && errexit "No change to Makefile or specfile"
 
 # Update the tarball
 make generateupstream || exit 3
