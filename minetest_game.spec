@@ -18,9 +18,9 @@ The main game for the Minetest game engine [minetest_game]
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/minetest/games/minetest_game
-cp -arv *.txt game.conf menu mods %{buildroot}/usr/share/minetest/games/minetest_game/
+mkdir -p %{buildroot}/usr/share/luanti/games/minetest_game
+cp -arv *.txt game.conf menu mods %{buildroot}/usr/share/luanti/games/minetest_game/
 
 %files
 %defattr(-,root,root,-)
-/usr/share/minetest/games/minetest_game/*
+/usr/share/luanti/games/minetest_game/*
