@@ -15,15 +15,8 @@ errexit() {
 echo -n 'Update the local git repository: '
 git pull --ff-only
 
-echo -n 'Find the abbreviated commit hash for the latest release: '
-hash=$(curl -s https://content.luanti.org/packages/Minetest/minetest_game/releases/ | grep -i -oE '\[[0-9a-f]+\]'  | head -1 | sed -e 's/[][]//g')
-echo ${hash}
-
-echo -n 'Shallow-clone the repo and find the matching commit    : '
-repo=$(mktemp -d minetest-XXXXXX)
-output=$(git clone -q --filter=tree:0 https://github.com/minetest/minetest_game.git ${repo} 2>&1) || errexit "Failed to clone minetest_game: ${output}"
-hash=$(git -C ${repo} log --pretty=format:"%H" ${hash} -1)
-rm -rf "${repo}"
+echo -n 'Find the commit hash for the latest release: '
+hash=$(curl -s https://content.luanti.org/api/packages/Minetest/minetest_game/releases/ | jq -r '.[0].commit')
 echo ${hash}
 
 if [[ "" == "${hash}" ]]; then
