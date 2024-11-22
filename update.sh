@@ -20,6 +20,10 @@ fi
 echo 'Fetch the upstream releaseinfo'
 release=$(curl -s https://content.luanti.org/api/packages/Minetest/minetest_game/releases/)
 
+echo -n 'Find the title for the latest release: '
+title=$(jq -r '.[0].title' <<< ${release})
+echo ${title}
+
 echo -n 'Find the commit hash for the latest release: '
 hash=$(jq -r '.[0].commit' <<< ${release})
 echo ${hash}
@@ -60,7 +64,7 @@ make bumpnogit
 git add ${PKG}.spec Makefile release upstream
 # Generate commit message, including release notes for all versions since
 # CURRENT_VERSION
-(	echo "Update to ${VERSION}";
+(	echo "Update to ${title} ${VERSION}";
 	echo;
 	i=0;
 	while [[ $(jq -r ".[$i].commit" <<< ${release} ) != ${CURRENT_VERSION} ]]; do
