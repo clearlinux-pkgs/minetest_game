@@ -69,7 +69,7 @@ git add ${PKG}.spec Makefile release upstream
 	i=0;
 	while [[ $(jq -r ".[$i].commit" <<< ${release} ) != ${CURRENT_VERSION} ]]; do
 		jq -r ".[$i].release_notes" <<< ${release} ;
-		((i++));
+		((i++)) ||: ; # avoid pipefail; this returns the new value of $i
 	done) | git commit -F -
 
 echo Send the package to koji
