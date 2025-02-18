@@ -1,8 +1,8 @@
 Name     : minetest_game
-Version  : 672b63f9dcbfbd2e8cb46658f7e550c8f7eecf47
-Release  : 26
-URL      : https://github.com/minetest/minetest_game/archive/672b63f9dcbfbd2e8cb46658f7e550c8f7eecf47/minetest_game-672b63f9dcbfbd2e8cb46658f7e550c8f7eecf47.tar.gz
-Source0  : https://github.com/minetest/minetest_game/archive/672b63f9dcbfbd2e8cb46658f7e550c8f7eecf47/minetest_game-672b63f9dcbfbd2e8cb46658f7e550c8f7eecf47.tar.gz
+Version  : d38b8e665723d90d2f3c73e26d2b00066451760d
+Release  : 27
+URL      : https://github.com/minetest/minetest_game/archive/d38b8e665723d90d2f3c73e26d2b00066451760d/minetest_game-d38b8e665723d90d2f3c73e26d2b00066451760d.tar.gz
+Source0  : https://github.com/minetest/minetest_game/archive/d38b8e665723d90d2f3c73e26d2b00066451760d/minetest_game-d38b8e665723d90d2f3c73e26d2b00066451760d.tar.gz
 Summary  : A Voxel Game
 
 Group    : Development/Tools
@@ -12,7 +12,7 @@ License  : CC-BY-SA-2.0 LGPL-2.1
 The main game for the Minetest game engine [minetest_game]
 
 %prep
-%setup -q -n minetest_game-672b63f9dcbfbd2e8cb46658f7e550c8f7eecf47
+%setup -q -n minetest_game-d38b8e665723d90d2f3c73e26d2b00066451760d
 
 %build
 
