@@ -18,7 +18,7 @@ if [[ "$1" != "--force" ]]; then
 fi
 
 echo 'Fetch the upstream releaseinfo'
-release=$(curl -s https://content.luanti.org/api/packages/Minetest/minetest_game/releases/)
+release=$(curl -s https://content.luanti.org/api/packages/Luanti/minetest_game/releases/)
 
 echo -n 'Find the title for the latest release: '
 title=$(jq -r '.[0].title' <<< ${release})
